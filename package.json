@@ -3,9 +3,11 @@
   "version": "6.0.0",
   "private": true,
   "description": "An out-of-box UI solution for enterprise applications",
+  "homepage": "https://AZ-terminal.github.io/ant-design-pro",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 max build",
     "build": "max build",
+    "predeploy": "npm run build",
     "deploy": "npm run build && npm run gh-pages",
     "dev": "npm run start:dev",
     "gh-pages": "gh-pages -d dist",
